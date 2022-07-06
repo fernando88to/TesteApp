@@ -19,7 +19,6 @@ class LoginController {
         User user = User.findByUsernameAndPassword(username, password)
 
         if (user) {
-            //new User(username:'sss', password:'tese').save(flush:true)
             render "Logged"
             return
         }
